@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile Website</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <style>
+    header {
+      background: linear-gradient(90deg, #6c757d, #343a40);
+      color: white;
+    }
+
+    .logo {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+    }
+
+    .sidebar {
+      background: #ffffff;
+      border-right: 2px solid #ddd;
+      height: 100%;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    
+    }
+
+    .sidebar h2 {
+      color: #8B0000;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 8px;
+      color: #6a0dad;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background: #f1e6ff;
+      color: #d10000;
+      transform: translateX(5px);
+    }
+
+    .profile h2 {
+      color: #B22222;
+      font-weight: bold;
+    }
+
+    .profile-card {
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      background: white;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+  <header class="py-3 px-4 d-flex align-items-center shadow">
+    <img src="images.jpg" class="logo me-3" alt="Profile Picture">
+    <div>
+      <h1 class="h4 mb-0 fw-bold">kenean gashaw</h1>
+      <small>ID: 0479/16</small>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row" style="height: calc(100vh - 100px);">
+
+    
+      <aside class="col-12 col-md-3 col-lg-2 p-4 sidebar overflow-auto">
+        <h2 class="fs-5 mb-3">📘 Labs & Assignments</h2>
+
+        <ul class="list-unstyled">
+          <li><a href="2.html" target="_blank">Lab 1</a></li>
+          <li><a href="3.html" target="_blank">Lab 2</a></li>
+          <li><a href="1.html" target="_blank">Lab 3</a></li>
+          <li><a href="best.html" target="_blank">Lab 4</a></li>
+        </ul>
+      </aside>
+
+      <main class="col p-5 overflow-auto">
+        <div class="profile-card">
+          <h2 class="mb-3">My Profile</h2>
+          <p><em>Welcome to my website!</em></p>
+          <p>This section contains details about my assignment.  
+             Use the sidebar to navigate to my lab works.</p>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
