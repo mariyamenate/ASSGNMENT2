@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Concept - Kenean Gashaw</title>
+  <title>My Profile Website</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
@@ -73,7 +73,7 @@
       background: white;
       padding: 20px;
       border-radius: 15px;
-      margin-top: 10px;
+      margin-top: 25px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
       border-left: 5px solid #8B0000;
     }
@@ -98,28 +98,45 @@
   <div class="container-fluid">
     <div class="row" style="height: calc(100vh - 100px);">
 
+      <!-- Sidebar -->
       <aside class="col-12 col-md-3 col-lg-2 p-4 sidebar overflow-auto">
-        <h2 class="fs-5 mb-3">📘 Navigation</h2>
+        <h2 class="fs-5 mb-3">📘 Labs & Assignments</h2>
         <ul class="list-unstyled">
-          <li><a href="#">Bootstrap Concept</a></li>
+          <li><a href="2.html" target="_blank">Lab 1</a></li>
+          <li><a href="3.html" target="_blank">Lab 2</a></li>
+          <li><a href="1.html" target="_blank">Lab 3</a></li>
+          <li><a href="boot.html" target="_blank">Lab 4</a></li>
         </ul>
       </aside>
 
+      <!-- Main Content -->
       <main class="col p-5 overflow-auto">
         <div class="profile-card">
+          <h2 class="mb-3">My Profile</h2>
+          <p><em>Welcome to my website!</em></p>
+          <p>This section contains details about my assignment. Use the sidebar to navigate to my lab works.</p>
+
+          <div class="mt-4">
+            <h4 class="fw-bold text-secondary">Assignment</h4>
+            <p>This assignment demonstrates my ability to design a responsive and visually appealing website using HTML, CSS, and Bootstrap.</p>
+
+            <h4 class="fw-bold text-secondary mt-3">Description</h4>
+            <p>The website includes a sidebar for lab navigation, a structured layout, and styled components to create a clean and user-friendly interface.</p>
+          </div>
+
           <div class="bootstrap-box">
-            <h3 class="mb-3 text-uppercase">Bootstrap Concept</h3>
-            <p>Bootstrap is a powerful tool for modern web development. Here are the core principles:</p>
-            <ul class="lh-lg">
-              <li><strong>CSS Framework:</strong> It is a collection of pre-written CSS code that allows you to create responsive websites quickly.</li>
-              <li><strong>Pre-made Components:</strong> Provides ready-to-use elements like buttons, cards, forms, and navigation bars.</li>
-              <li><strong>Grid System:</strong> Uses a powerful 12-column system (rows and columns) to design layouts that scale perfectly.</li>
-              <li><strong>Utility Classes:</strong> Includes thousands of "helper" classes for fast styling (margins, padding, colors) without writing custom CSS.</li>
-              <li><strong>Professional Design:</strong> Ensures a clean, modern, and high-quality appearance by default.</li>
-              <li><strong>Mobile-First:</strong> Designed specifically to look great on smartphones first, then scaling up to tablets and desktops.</li>
-              <li><strong>Customization:</strong> It works best when combined with custom CSS to create a unique brand identity.</li>
+            <h3 class="mb-3">Bootstrap Explanation</h3>
+            <ul>
+              <li>Bootstrap is a CSS framework to create responsive websites easily.</li>
+              <li>It provides ready-made components like buttons, cards, forms, and navbars.</li>
+              <li>Uses a grid system (rows & columns) to design scalable layouts.</li>
+              <li>Includes utility classes for fast styling without custom CSS.</li>
+              <li>Ensures modern, clean, and professional look.</li>
+              <li>Supports mobile-first design for all devices.</li>
+              <li>Combining with custom CSS makes unique and attractive designs.</li>
             </ul>
           </div>
+
         </div>
       </main>
 

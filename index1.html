@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenean Gashaw | Cookies Lab</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="py-3 px-4 d-flex align-items-center shadow">
+    <img src="images.jpg" class="logo me-3" alt="Profile Picture">
+    <div>
+      <h1 class="h4 mb-0 fw-bold text-uppercase">kenean gashaw</h1>
+      <small class="text-light">ID: 0479/16</small>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row" style="min-height: calc(100vh - 100px);">
+      
+      <aside class="col-12 col-md-3 col-lg-2 p-4 sidebar">
+        <h2 class="fs-5 mb-3 text-secondary">📘 Navigation</h2>
+        <ul class="list-unstyled">
+          <li><a href="#cookie-section" class="cookie-link">🍪 Cookies Concept</a></li>
+        </ul>
+      </aside>
+
+      <main class="col p-5 overflow-auto">
+        <div class="profile-card">
+          
+          <section id="cookie-section" class="bootstrap-box">
+            <h3 class="mb-3">JavaScript Cookies Concept</h3>
+            <p>Cookies are small data files stored in the browser. They allow developers to store user preferences that persist even after a page refresh.</p>
+
+            
+
+            <div class="row g-4 mt-2">
+              <div class="col-md-6">
+                <div class="p-4 border rounded bg-white shadow-sm">
+                  <h5 class="fw-bold mb-3">User Identification</h5>
+                  <div class="input-group mb-3">
+                    <input type="text" id="userNameInput" class="form-control" placeholder="Enter your name...">
+                    <button class="btn btn-primary" onclick="saveUserCookie()">Save Name</button>
+                  </div>
+                  <div class="p-2 bg-light border-start border-primary border-4">
+                    <strong>Welcome:</strong> <span id="nameDisplay" class="text-primary fw-bold">Visitor</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-4 border rounded bg-white shadow-sm">
+                  <h5 class="fw-bold mb-3">Theme Preference</h5>
+                  <p class="small text-muted">This preference is saved in a cookie for 30 days.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-dark flex-grow-1" onclick="setTheme('dark')">Dark Mode</button>
+                    <button class="btn btn-outline-dark flex-grow-1" onclick="setTheme('light')">Light Mode</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-4 border-top">
+              <h5 class="fw-bold">Cookie Attributes Explained</h5>
+              <div class="table-responsive mt-3">
+                <table class="table table-sm">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Attribute</th>
+                      <th>Purpose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>Expires</code></td><td>Sets a date for the cookie to be deleted.</td></tr>
+                    <tr><td><code>Path</code></td><td>Specifies the URL path that can access the cookie.</td></tr>
+                    <tr><td><code>SameSite</code></td><td>Controls cross-site cookie behavior for security.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <button class="btn btn-link text-danger p-0 mt-2" onclick="clearAllData()">Reset All Cookies</button>
+            </div>
+          </section>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
